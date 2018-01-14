@@ -1,0 +1,198 @@
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    a.cBox.has-arrow:before {
+    left: 101%;
+    -webkit-transform: translateY(-50%) scale(.6);
+    -moz-transform: translateY(-50%) scale(.6);
+    -ms-transform: translateY(-50%) scale(.6);
+    -o-transform: translateY(-50%) scale(.6);
+    transform: translateY(-50%) scale(.6);
+}
+}
+@media only screen and (max-width: 992px) {
+.home-top h2 {
+    font-size: 40px;
+}
+.home-top h2 span {
+    font-size: 30px;
+    margin-top: 20px;
+}
+.home-bottom a {
+    max-width: 290px;
+    min-height: 237px;
+    font-size: 36px;
+}
+.header-right img.logo1 {
+    max-width: 153px;
+}
+.header-right img.logo2 {
+    max-width: 150px;
+}
+.header-right {
+    width: 351px;
+}
+.header-left {
+    max-width: calc(100% - 351px);
+}
+h1.sec-title {
+    font-size: 24px;
+    margin-top: 13px;
+}
+.text-block p {
+    font-size: 23px;
+    font-weight: 700;
+}
+.bottom-div h2 {
+    font-size: 18px;
+}
+.btn-primary.btn--green {
+    font-size: 21px;
+}
+a.cBox.has-arrow:before {
+    left: 71%;
+}
+.table thead th {
+    font-size: 15px;
+}
+.table td {
+    font-size: 16px;
+}
+.bottom-div.type2 {
+    bottom: 0px;
+}
+}
+
+
+@media only screen and (max-width: 767px) {
+.home-top img {
+    max-width: 400px;
+}
+.home-top h2 {
+    font-size: 27px;
+    margin-top: 32px;
+}
+.home-top h2 span {
+    font-size: 21px;
+    margin-top: 12px;
+}
+.line {
+    top: 25%;
+    left: 50%;
+    height: 342px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.home-top {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header-right{
+    width: 100%;
+    float: none;
+    overflow: hidden;
+}
+.header-left{
+    max-width: 100%;
+    float: none;
+}
+header {
+    background: #408690;
+    padding: 20px 15px;
+}
+.header-right a:last-child{
+    float: right;
+}
+.header-right img.logo1 {
+    margin-top: 13px;
+}
+h1.sec-title {
+    margin-top: 20px;
+    text-align: center;
+}
+.bottom-div h2 {
+    display: block;
+    margin-bottom: 20px;
+}
+.bottom-div {
+    bottom: 20px;
+}
+.has-pad-bottom {
+    padding-bottom: 139px;
+}
+a.cBox{
+    margin-bottom: 60px;
+}
+a.cBox.has-arrow:before {
+    left: 25%;
+    top: auto;
+    bottom: -84px;
+    -webkit-transform: rotate(90deg) scale(.5);
+    -moz-transform: rotate(90deg) scale(.5);
+    -ms-transform: rotate(90deg) scale(.5);
+    -o-transform: rotate(90deg) scale(.5);
+    transform: rotate(90deg) scale(.5);
+}
+.alert-primary {
+    font-size: 15px;
+}
+}
+
+
+@media only screen and (max-width: 640px) {
+
+
+}
+
+
+@media only screen and (max-width: 425px) {
+.home-top h2 {
+    font-size: 16px;
+    margin-top: 24px;
+}
+.home-top h2 span {
+    font-size: 16px;
+    margin-top: 12px;
+}
+.header-right a {
+    display: block;
+    text-align: center;
+    float: none!important;
+    margin-bottom: 10px;
+}
+h1.sec-title {
+    font-size: 21px;
+}
+.text-block p {
+    font-size: 16px;
+}
+.bottom-div h2 {
+    font-size: 15px;
+}
+.btn-primary.btn--green {
+    font-size: 15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
