@@ -64,15 +64,15 @@ $("input[class=checkInput]").on('change',function() {
     //perform total based on page check
     if(value_parts[0] == 'A')
     {
-        doPageTotal(list_items_3a);
+        doPageTotalUpto(1);
     }
     else if(value_parts[0] == 'B')
     {
-        doPageTotal(list_items_3b);
+        doPageTotalUpto(2);
     }
     else if(value_parts[0] == 'C')
     {
-        doPageTotal(list_items_3c);
+        doPageTotalUpto(3);
     }
     
 });
@@ -121,6 +121,38 @@ function doPageTotal(list_items)
     $("#cost").html(final_data[0].toLocaleString('en'));
     $("#rating").html(final_data[1]);
     return final_data;
+}
+
+function doPageTotalUpto(page_number)
+{
+    var final_data = [0,0];
+    
+    if(page_number > 0)
+    {
+        var t_final_data = doPageTotal(list_items_3a);
+        final_data[0] = eval(final_data[0] + "+" + t_final_data[0]);
+        final_data[1] = eval(final_data[1] + "+" + t_final_data[1]);
+        
+    }
+    
+    if(page_number > 1)
+    {
+        var t_final_data = doPageTotal(list_items_3b);
+        final_data[0] = eval(final_data[0] + "+" + t_final_data[0]);
+        final_data[1] = eval(final_data[1] + "+" + t_final_data[1]);
+        
+    }
+    
+    if(page_number > 2)
+    {
+        var t_final_data = doPageTotal(list_items_3c);
+        final_data[0] = eval(final_data[0] + "+" + t_final_data[0]);
+        final_data[1] = eval(final_data[1] + "+" + t_final_data[1]);
+        
+    }
+    
+    $("#cost").html(final_data[0].toLocaleString('en'));
+    $("#rating").html(final_data[1]);
 }
 
 function doFinalTotal()
