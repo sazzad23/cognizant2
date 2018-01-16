@@ -65,7 +65,7 @@
                             <td>10</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput"/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="0" value="A$100000,10" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -76,7 +76,7 @@
                             <td>10</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput"/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="1" value="A$120000,10" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -87,7 +87,7 @@
                             <td>3</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput"/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="2" value="A$30000,3"/><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -98,7 +98,7 @@
                             <td>3</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput"/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="3" value="A$40000,3"/><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -109,7 +109,7 @@
                             <td>10</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput"/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="4" value="A$70000,10" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -120,7 +120,7 @@
                             <td>10</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput" checked/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="5" value="A$65000,10" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -133,8 +133,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Expected quality ratings <img src="assets/images/star.png" alt="" /> 21</h2>
-                            <h2>Total cost   $130,000</h2>
+                            <h2>Ratings <img src="assets/images/star.png" alt="" /> <span id="rating">0</span></h2>
+                            <h2>Total cost   $ <span id="cost">0</span></h2>
+                            <a href="screen3B.html" class="btn btn-primary btn--green">Next</a>
                         </div>
                     </div>
                 </div>
@@ -147,5 +148,11 @@
         <script src="js/popper.min.js" ></script><!-- Bootstrap Dependency -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $( document ).ready(function() {
+                doPageTotal(list_items_3a);
+                markChechBoxes(list_items_3a);
+            });
+        </script>
     </body>
 </html> 

@@ -46,12 +46,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="#">
+                            <a href="screen_3_Solution.html" onclick="saveOption('life_science')">
                                 <span>Life<br/>science</span>
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="#" class="bk-2">
+                            <a href="screen_3_Solution.html" class="bk-2"  onclick="saveOption('insurance')">
                                 <span> Insurance</span>
                             </a>
                         </div>
@@ -67,5 +67,21 @@
         <script src="js/popper.min.js" ></script><!-- Bootstrap Dependency -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            if (typeof(Storage) !== "undefined") {
+                console.log('WOW! Web Storage support available!');
+            } else {
+                alert('Sorry! No Web Storage support..');
+            }
+        
+        $( document ).ready(function() {
+            resetAllData();
+        });
+        function saveOption(option)
+        {
+            localStorage.setItem("option", option);
+            console.log("option:" + localStorage.getItem("option"));
+        }
+        </script>
     </body>
 </html> 

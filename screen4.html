@@ -62,7 +62,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="screenAItems">
                             <td>SOLUTION<br/>ACCELERATORS</td>
                             <td>MEDVANTAGE (LS, AVM)<br/>
                                 ADPART (ALL, ALL)
@@ -73,10 +73,10 @@
                             </td>
                             <td>10<br/>3</td>
                             <td>
-                                <a href="#"><img src="assets/images/edit.png" alt="" /></a>
+                                <a href="screen3A.html"><img src="assets/images/edit.png" alt="" /></a>
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="screenBItems">
                             <td>DELIVERY <br/>EXCELLENCE</td>
                             <td>CODENIZANT, CAST<br/>CLM
                             </td>
@@ -86,10 +86,10 @@
                             </td>
                             <td>1<br/>1</td>
                             <td>
-                                <a href="#"><img src="assets/images/edit.png" alt="" /></a>
+                                <a href="screen3B.html"><img src="assets/images/edit.png" alt="" /></a>
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="screenCItems">
                             <td>COGNIZANT <br/>DIFFERENTIATORS</td>
                             <td>
                                 STRATEGIC ENGAGEMENT<br/>AI / AUTOMATION
@@ -100,7 +100,7 @@
                             </td>
                             <td>1<br/>2</td>
                             <td>
-                                <a href="#"><img src="assets/images/edit.png" alt="" /></a>
+                                <a href="screen3C.html"><img src="assets/images/edit.png" alt="" /></a>
                             </td>
                         </tr>
                     </tbody>
@@ -112,8 +112,8 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Total quality ratings <img src="assets/images/star.png" alt="" /> 18</h2>
-                            <h2>Total cost   $150,000</h2>
+                            <h2>Total quality ratings <img src="assets/images/star.png" alt="" /> <span id="rating">0</span></h2>
+                            <h2>Total cost   $ <span id="cost">0</span></h2>
                         </div>
                     </div>
                 </div>
@@ -126,5 +126,10 @@
         <script src="js/popper.min.js" ></script><!-- Bootstrap Dependency -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        $( document ).ready(function() {
+            listComponentsAndDoFinalTotal();
+        });
+        </script>
     </body>
 </html> 

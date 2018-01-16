@@ -65,7 +65,7 @@
                             <td>1</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput" checked/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput"  id="0" value="C$0,1" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -76,7 +76,7 @@
                             <td>2</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput" checked/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput"  id="1" value="C$20000,2" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -87,7 +87,7 @@
                             <td>1</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput"/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="2" value="C$10000,1" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -98,7 +98,7 @@
                             <td>1</td>
                             <td>
                                 <label>
-                                    <input type="checkbox" class="checkInput"/><span>&nbsp;</span>
+                                    <input type="checkbox" class="checkInput" id="3" value="C$40000,1" /><span>&nbsp;</span>
                                 </label>
                             </td>
                         </tr>
@@ -111,8 +111,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12">
-                            <h2>Total quality ratings <img src="assets/images/star.png" alt="" /> 18</h2>
-                            <h2>Total cost   $150,000</h2>
+                            <h2>Ratings <img src="assets/images/star.png" alt="" /> <span id="rating">0</span></h2>
+                            <h2>Total cost   $ <span id="cost">0</span></h2>
+                            <a href="screen4.html" class="btn btn-primary btn--green">Next</a>
                         </div>
                     </div>
                 </div>
@@ -125,5 +126,12 @@
         <script src="js/popper.min.js" ></script><!-- Bootstrap Dependency -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        $( document ).ready(function() {
+            doPageTotal(list_items_3c);
+            markChechBoxes(list_items_3c);
+        });
+        
+    </script>
     </body>
 </html> 
