@@ -35,7 +35,7 @@ var components_3c = ["Strategic client engagement",
                      "AI / Automation",
                      "Mainspring",
                      "Strategic partnerships"];
-
+var final_data = [0,0];
 $("input[class=checkInput]").on('change',function() {
     var item_key = '';
     var value_parts = this.value.split('$');
@@ -128,7 +128,7 @@ function doFinalTotal()
     var final_data_a = doPageTotal(list_items_3a);
     var final_data_b = doPageTotal(list_items_3b);
     var final_data_c = doPageTotal(list_items_3c);
-    var final_data = [0,0];
+    final_data = [0,0];
     final_data[0] = eval(final_data_a[0] + "+" + final_data_b[0] + "+" + final_data_c[0] );
     final_data[1] = eval(final_data_a[1] + "+" + final_data_b[1] + "+" + final_data_c[1] );
     
@@ -167,4 +167,30 @@ function listComponentsAndDoFinalTotal()
     listComponents(list_items_3b,components_3b,"screenBItems");
     listComponents(list_items_3c,components_3c,"screenCItems");
     doFinalTotal();
+}
+function evaluateSolution()
+{
+    var is_for_insurance = localStorage.getItem("option") == "insurance"?true:false;
+    if(localStorage.getItem(list_items_3b[0]) == null)
+    {
+        window.location = "screen_5A.html";
+    }
+    else if((is_for_insurance && final_data[1] < 23) || (!is_for_insurance && final_data[1] < 21) )
+    {
+        window.location = "screen_5B.html";
+    }
+    else if((is_for_insurance && (localStorage.getItem(list_items_3a[3]) == null || localStorage.getItem(list_items_3a[4]) == null))
+            ||
+            (!is_for_insurance && (localStorage.getItem(list_items_3a[1]) == null || localStorage.getItem(list_items_3a[2]) == null)))
+    {
+        window.location = "screen_5C.html";
+    }
+    else if((is_for_insurance && final_data[0] > 150000) || (!is_for_insurance && final_data[0] > 170000) )
+    {
+        window.location = "screen_5D.html";
+    }
+    else if((is_for_insurance && final_data[0] <= 150000) || (!is_for_insurance && final_data[0] <= 170000) )
+    {
+        window.location = "screen_5E.html";
+    }
 }

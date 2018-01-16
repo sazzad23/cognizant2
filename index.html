@@ -46,12 +46,12 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="screen_3_Solution.html" onclick="saveOption('life_science')">
+                            <a href="#" onclick="saveOption('life_science')">
                                 <span>Life<br/>science</span>
                             </a>
                         </div>
                         <div class="col-md-6">
-                            <a href="screen_3_Solution.html" class="bk-2"  onclick="saveOption('insurance')">
+                            <a href="#" class="bk-2"  onclick="saveOption('insurance')">
                                 <span> Insurance</span>
                             </a>
                         </div>
@@ -80,7 +80,11 @@
         function saveOption(option)
         {
             localStorage.setItem("option", option);
-            console.log("option:" + localStorage.getItem("option"));
+            redirect();
+        }
+        function redirect()
+        {
+            window.location = localStorage.getItem("option")=="insurance"? "screen2B.html":"screen2A.html";
         }
         </script>
     </body>

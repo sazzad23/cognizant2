@@ -87,7 +87,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <a href="#" onclick="redirect()" class="btn btn-primary btn--green">Next</a>
+                            <a href="screen3A.html" class="btn btn-primary btn--green">Next</a>
                         </div>
                     </div>
                 </div>
@@ -100,16 +100,5 @@
         <script src="js/popper.min.js" ></script><!-- Bootstrap Dependency -->
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
-        <script>
-            if (typeof(Storage) !== "undefined") {
-                console.log('WOW! Web Storage support available!');
-            } else {
-                alert('Sorry! No Web Storage support..');
-            }
-        function redirect()
-        {
-            window.location = localStorage.getItem("option")=="insurance"? "screen2B.html":"screen2A.html";
-        }
-        </script>
     </body>
 </html> 
