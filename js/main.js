@@ -33,8 +33,8 @@ var components_3b = ["Codenizant, Cast",
                      "BIC, LSS, MI / CSI (ISPACE)"];
 var components_3c = ["Strategic client engagement",
                      "AI / Automation",
-                     "Mainspring",
-                     "Strategic partnerships"];
+                     "Strategic partnerships",
+                     "Digital Capabilities"];
 var final_data = [0,0];
 $("input[class=checkInput]").on('change',function() {
     var item_key = '';
