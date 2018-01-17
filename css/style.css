@@ -133,12 +133,13 @@ ul{
     max-width: 210px;
 }
 .header-right{
-    width: 482px;
+    width: 548px;
     float: right;
+        margin-top: -20px;
 }
 .header-left{
     width: 100%;
-    max-width: calc(100% - 482px);
+    max-width: calc(100% - 548px);
     float: left;
 }
 header{
@@ -347,12 +348,40 @@ label input[type="checkbox"]:checked+span:before{
     letter-spacing: 1px;
     border-radius: 0px;
 }
+a.edit{
+    color: #000;
+    font-size: 70px;
+}
+.info-pop i{
+    font-size: 70px;
+    cursor: pointer;
+}
 
+.info-pop{
+    position: relative;
+    top: 18px;
+    left: -8px;
+    display: inline-block;
+}
 
+.bottom-div {
+    text-align: right;
+}
 
-
-
-
+.bottom-div h2 {
+    margin-right: 10px;
+}
+.popover-body {
+    font-size: 18px;
+}
+a.cBox i {
+    display: block;
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+a.cBox.active i {
+    font-size: 60px;
+}
 
 
 

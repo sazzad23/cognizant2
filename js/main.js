@@ -1,20 +1,4 @@
-$(document).ready(function(){
-    //Background height fix
-//    function backgroundFix(){
-//        var getBodyHeight = $('body').height();
-//        
-//        $('#main').height(getBodyHeight);
-//        
-//    }
-//    backgroundFix(); //call function
-//        $(window).resize(function(){
-//            
-//        setTimeout(function(){
-//            backgroundFix(); //call function on window rezize
-//        },1000);
-//         
-//    });
-});
+
 
 var list_items_3a = ["3A1","3A2","3A3","3A4","3A5","3A6"];
 var list_items_3b = ["3B1","3B2","3B3","3B4","3B5"];
@@ -226,3 +210,7 @@ function evaluateSolution()
         window.location = "screen_5E.html";
     }
 }
+
+$(document).ready(function(){
+$('span[data-toggle="popover"]').popover();
+});
