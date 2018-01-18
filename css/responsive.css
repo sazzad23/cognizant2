@@ -129,7 +129,7 @@ h1.sec-title {
     bottom: 20px;
 }
 .has-pad-bottom {
-    padding-bottom: 184px;
+    padding-bottom: 217px;
 }
 a.cBox{
     margin-bottom: 60px;
@@ -152,6 +152,12 @@ a.cBox.has-arrow:before {
     position: relative;
     top: 16px;
     left: 0px;
+    display: block;
+    float: none;
+    margin-bottom: 26px;
+    margin: auto;
+    margin-bottom: 26px;
+    text-align: center;
 }
 .bottom-div.type2 {
     bottom: 8px;

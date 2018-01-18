@@ -359,9 +359,10 @@ a.edit{
 
 .info-pop{
     position: relative;
-    top: 18px;
-    left: -8px;
+    top: -6px;
+    left: 0px;
     display: inline-block;
+    float: left;
 }
 
 .bottom-div {
