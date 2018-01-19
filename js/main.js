@@ -66,6 +66,7 @@ function resetData(list_items)
     {
         localStorage.removeItem(list_items[i]);
     }
+    localStorage.removeItem("timer");
 }
 function resetAllData()
 {
@@ -224,8 +225,32 @@ function displayInfoParagraph()
     
     $(".info-pop").attr("data-content",infoText);
 }
+function formatTime(seconds) {
+    return [
+            //parseInt(seconds / 60 / 60),
+            parseInt(seconds / 60 % 60),
+            parseInt(seconds % 60)
+            ]
+    .join(":")
+    .replace(/\b(\d)\b/g, "0$1")
+}
+function startTimer()
+{
+    showTimeTaken();
+    window.setInterval(function(){
+        var timer_start = localStorage.getItem("timer") * 1 + 1;
+        localStorage.setItem("timer",timer_start);
+        $(".timer").html(formatTime(timer_start));
+    }, 1000);
+}
+
+function showTimeTaken()
+{
+    $(".timer").html(formatTime(localStorage.getItem("timer") * 1));
+}
+
 $(document).ready(function(){
     $('span[data-toggle="popover"]').popover();
     displayInfoParagraph();
-                  console.log($(".info-pop").attr("data-content"));
+    console.log($(".info-pop").attr("data-content"));
 });
