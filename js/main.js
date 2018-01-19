@@ -210,7 +210,22 @@ function evaluateSolution()
         window.location = "screen_5E.html";
     }
 }
-
+function displayInfoParagraph()
+{
+    var infoText = "";
+    if(localStorage.getItem("option") == "life_science")
+    {
+        infoText = "LIFE SCIENCES customer is looking for project estimates for AUTOMATION TESTING of CLINICAL TRIALS processes. Provide your estimate that ensures a minimum quality rating of 21.";
+    }
+    else if(localStorage.getItem("option") == "insurance")
+    {
+        infoText ="INSURANCE customer is looking for project estimates for developing a DIGITAL DECISION SUPPORT SYSTEM application for their SALES FORCE. Provide your estimate that ensures a minimum quality rating of 23.";
+    }
+    
+    $(".info-pop").attr("data-content",infoText);
+}
 $(document).ready(function(){
-$('span[data-toggle="popover"]').popover();
+    $('span[data-toggle="popover"]').popover();
+    displayInfoParagraph();
+                  console.log($(".info-pop").attr("data-content"));
 });
