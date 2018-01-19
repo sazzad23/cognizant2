@@ -133,13 +133,13 @@ ul{
     max-width: 210px;
 }
 .header-right{
-    width: 548px;
+    width: 610px;
     float: right;
         margin-top: -20px;
 }
 .header-left{
     width: 100%;
-    max-width: calc(100% - 548px);
+    max-width: calc(100% - 610px);
     float: left;
 }
 header{
@@ -383,7 +383,14 @@ a.cBox i {
 a.cBox.active i {
     font-size: 60px;
 }
-
+span.timer {
+    font-size: 40px;
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 0px 10px;
+    position: relative;
+    top: 15px;
+}
 
 
 
