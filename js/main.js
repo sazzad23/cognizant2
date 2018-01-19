@@ -250,7 +250,7 @@ function showTimeTaken(is_final_screen)
     
     if(is_final_screen)
     {
-        $("#time_taken").html("Time taken to comple: " formatTime(localStorage.getItem("timer") * 1));
+        $("#time_taken").html("Time taken to comple: " + formatTime(localStorage.getItem("timer") * 1));
     }
 }
 
