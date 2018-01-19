@@ -114,6 +114,9 @@ span.timer {
     max-width: 100%;
     float: none;
 }
+.timecount {
+    font-size: 21px;
+}
 header {
     background: #408690;
     padding: 20px 15px;
