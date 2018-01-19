@@ -236,7 +236,7 @@ function formatTime(seconds) {
 }
 function startTimer()
 {
-    showTimeTaken();
+    showTimeTaken(false);
     window.setInterval(function(){
         var timer_start = localStorage.getItem("timer") * 1 + 1;
         localStorage.setItem("timer",timer_start);
@@ -244,9 +244,14 @@ function startTimer()
     }, 1000);
 }
 
-function showTimeTaken()
+function showTimeTaken(is_final_screen)
 {
     $(".timer").html(formatTime(localStorage.getItem("timer") * 1));
+    
+    if(is_final_screen)
+    {
+        $("#time_taken").html("Time taken to comple: " formatTime(localStorage.getItem("timer") * 1));
+    }
 }
 
 $(document).ready(function(){
